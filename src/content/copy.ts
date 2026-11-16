@@ -1,0 +1,201 @@
+export const copy = {
+  brand: "Halden",
+  meta: {
+    title: "Halden — a free valuation for your car",
+    description:
+      "Enter a UK registration and mileage, confirm the car, and request a free valuation. A design demo with fictional vehicle data.",
+  },
+  skip: "Skip to the valuation",
+  header: {
+    demo: "Demo",
+  },
+  hero: {
+    eyebrow: "Free UK valuation",
+    title: "Tell us the plate. We’ll price the car.",
+    lede: "Two minutes, no account. Confirm the car, note its condition, and ask for a figure you can take or leave.",
+  },
+  trust: [
+    {
+      title: "No obligation",
+      body: "Hear the number, then decide. Nothing is booked until you accept.",
+    },
+    {
+      title: "Collected from you",
+      body: "A buyer comes to the car, anywhere on the UK mainland.",
+    },
+    {
+      title: "Paid the same day",
+      body: "Funds go out when the keys and documents change hands.",
+    },
+  ],
+  how: {
+    title: "How a valuation works",
+    steps: [
+      {
+        title: "Match the plate",
+        body: "We read the registration and show the make, model, year, fuel and engine.",
+      },
+      {
+        title: "Describe the car",
+        body: "Condition, faults and a few photos. Honest detail makes a usable offer.",
+      },
+      {
+        title: "Leave a way to reply",
+        body: "A buyer calls or emails with a figure. You do not have to take it.",
+      },
+    ],
+  },
+  plates: {
+    title: "Plates you can try",
+    intro: "The vehicles behind these registrations are fictional. They exist so the demo can run without a live data feed.",
+  },
+  demoPlates: [
+    { vrm: "OV19 HRL", caption: "2019 Volvo XC40", chip: true, found: true },
+    { vrm: "BK68 YTR", caption: "2018 Volkswagen Polo", chip: true, found: true },
+    { vrm: "LF71 MNC", caption: "2021 Tesla Model 3", chip: true, found: true },
+    { vrm: "XX22 AAA", caption: "Valid plate, no vehicle on file", chip: true, found: false },
+    { vrm: "YJ06 DKP", caption: "2006 Ford Fiesta", chip: false, found: true },
+    { vrm: "W456 FGT", caption: "2000 Vauxhall Corsa", chip: false, found: true },
+    { vrm: "A123 BCD", caption: "1983 Ford Sierra", chip: false, found: true },
+    { vrm: "ABC 123A", caption: "1963 Morris Minor", chip: false, found: true },
+  ],
+  flow: {
+    progressLabel: "Valuation progress",
+    steps: [
+      { id: "plate", label: "Plate" },
+      { id: "confirm", label: "Car" },
+      { id: "condition", label: "Condition" },
+      { id: "contact", label: "Contact" },
+    ],
+    plate: {
+      title: "Your registration",
+      body: "We match it to the make, model and year.",
+      vrmLabel: "Registration",
+      vrmHint: "UK plates only. Spaces are optional.",
+      mileageLabel: "Mileage",
+      mileageSuffix: "miles",
+      demoLabel: "Try a demo plate",
+      button: "Find my car",
+      pending: "Checking the plate…",
+    },
+    confirm: {
+      title: "Is this the car?",
+      body: "If the details are wrong, go back and check the registration.",
+      yes: "Yes, continue",
+      no: "That’s not my car",
+    },
+    facts: {
+      registration: "Registration",
+      vehicle: "Vehicle",
+      year: "Year",
+      fuel: "Fuel",
+      engine: "Engine",
+      colour: "Colour",
+      mileage: "Mileage",
+    },
+    condition: {
+      title: "How is it?",
+      body: "A short, honest picture is enough for a first figure.",
+      conditionLegend: "Overall condition",
+      faultsLegend: "Any of these apply?",
+      keysLegend: "How many keys do you have?",
+      photosLabel: "Photos",
+      photosHint: "Optional. Up to 6 photos, JPG, PNG, WebP or HEIC, 5 MB each. In this demo they stay on your device.",
+      addPhotos: "Add photos",
+      removePhoto: "Remove",
+      button: "Continue",
+      back: "Back",
+    },
+    conditions: [
+      { value: "excellent", label: "Excellent", hint: "Serviced, unmarked, ready to go" },
+      { value: "good", label: "Good", hint: "Everyday wear, nothing structural" },
+      { value: "fair", label: "Fair", hint: "Needs some work, still drives" },
+      { value: "poor", label: "Poor", hint: "Faults, damage, or off the road" },
+    ],
+    faults: [
+      { value: "warning_lights", label: "Warning lights on" },
+      { value: "mechanical", label: "Mechanical fault" },
+      { value: "accident", label: "Accident damage" },
+      { value: "cosmetic", label: "Cosmetic damage" },
+      { value: "finance", label: "Outstanding finance" },
+      { value: "no_service_history", label: "No service history" },
+      { value: "none", label: "None of these" },
+    ],
+    keys: [
+      { value: "one", label: "One key" },
+      { value: "two_or_more", label: "Two or more" },
+    ],
+    contact: {
+      title: "Where should we send the offer?",
+      body: "Name, a UK phone number, and an email. That’s the lot.",
+      summaryLabel: "Your car",
+      edit: "Edit car",
+      nameLabel: "Name",
+      phoneLabel: "Phone",
+      phoneHint: "A UK mobile or landline.",
+      emailLabel: "Email",
+      note: "By sending this you agree we can contact you about this car. In this demo nothing is sent, and no offer is made.",
+      button: "Get my free valuation",
+      pending: "Sending the request…",
+      back: "Back",
+    },
+    success: {
+      title: "Request received",
+      body: "A live desk would reply with a figure. This demo stops here: the request was only written to the server log.",
+      referenceLabel: "Reference",
+      again: "Value another car",
+      photosNone: "No photos were attached.",
+      photosOne: "1 photo recorded, none stored.",
+      photosMany: "photos recorded, none stored.",
+    },
+    review: "Check the fields below and try again.",
+    checkPlate: "Check the registration",
+    checkCondition: "Check the condition",
+  },
+  errors: {
+    vrm_required: "Enter the registration.",
+    vrm_invalid: "That doesn’t look like a UK number plate. Use the letters and numbers on the plate.",
+    not_found: "We couldn’t find that registration. Check the characters, or try XX22 AAA to see this message on purpose.",
+    mileage_required: "Enter the mileage.",
+    mileage_invalid: "Mileage needs to be a whole number of miles.",
+    mileage_range: "Enter a mileage from 0 to 999,999.",
+    condition_required: "Choose a condition.",
+    faults_required: "Select any faults, or choose none of these.",
+    faults_conflict: "Choose “none of these” on its own.",
+    keys_required: "Tell us how many keys you have.",
+    name_required: "Enter your name.",
+    name_invalid: "Use letters, spaces, hyphens or apostrophes.",
+    phone_required: "Enter a phone number.",
+    phone_invalid: "Enter a UK phone number, such as 07700 900123.",
+    email_required: "Enter an email address.",
+    email_invalid: "Enter a valid email address.",
+    photos_type: "Photos need to be JPG, PNG, WebP or HEIC.",
+    photos_too_large: "Each photo needs to be 5 MB or smaller.",
+    photos_too_many: "You can add up to 6 photos.",
+    photos_invalid: "That file could not be used. Choose another photo.",
+    provider_unavailable: "The vehicle check didn’t respond. Try again in a moment.",
+    provider_not_configured: "The vehicle check isn’t configured.",
+    notifier_not_configured: "A notification channel is switched on but missing its settings.",
+    submit_failed: "We couldn’t send that. Try again.",
+    invalid_json: "The registration needs to be sent as text.",
+    review: "Check the fields below and try again.",
+  },
+  routeError: {
+    title: "Something went wrong",
+    body: "The page hit an unexpected error. Try again, or reload.",
+    retry: "Try again",
+  },
+  noscript: "This valuation form needs JavaScript.",
+  footer: {
+    disclaimer:
+      "Halden is a portfolio demo. Vehicle records are fictional, photos are not stored, and submitting the form does not create a valuation or contact a buyer.",
+    affiliation: "Independent demo. Not affiliated with the DVLA or any insurer.",
+  },
+} as const;
+
+export function errorText(code: string | undefined): string {
+  if (code && Object.prototype.hasOwnProperty.call(copy.errors, code)) {
+    return copy.errors[code as keyof typeof copy.errors];
+  }
+  return copy.errors.submit_failed;
+}
